@@ -24633,3 +24633,8 @@ prebuilt_etc_xml {
     sub_dir: "vintf/manifest",
     soc_specific: true,
 }
+// expose the pearl-specific stock OS3 c2store to the shared mt6895-common hook
+filegroup {
+    name: "xiaomi_pearl_c2store_src",
+    srcs: ["proprietary/vendor/lib64/libcodec2_mtk_c2store.so"],
+}
